@@ -278,3 +278,9 @@ footer .hr {
   color: var(--primary-clr);
   margin-bottom: 1rem;
 }
+
+@media all and (max-width: 640px) {
+  html,body {
+    font-size: 50%;
+  }
+}
