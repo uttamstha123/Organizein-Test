@@ -1,0 +1,280 @@
+/* Css Reset */
+html,
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ol,
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/********** 
+Variable
+**********/
+
+:root {
+  /* Font Family */
+  --ff-primary: "Open Sans", sans-serif;
+
+  /* Fonts Size */
+  --fs-title: 3.5rem;
+  --fs-subtitle: 3rem;
+
+  --fs-100: 1.6rem;
+  --fs-200: 1.8rem;
+  --fs-300: 2rem;
+  --fs-400: 2.4rem;
+
+  /* Colors */
+  --primary-clr: #7f7f7f;
+  --secondary-clr: #8c8c8c;
+  --border-clr: #ffd451;
+  --card-border: #d9d9d9;
+}
+
+/********** 
+Utilities 
+**********/
+.title {
+  font-size: var(--fs-title);
+  color: var(--primary-clr);
+  font-weight: 400;
+}
+.subtitle {
+  font-size: var(--fs-subtitle);
+  color: var(--secondary-clr);
+  font-weight: 400;
+}
+.quote {
+  font-size: var(--fs-400);
+  color: var(--primary-clr);
+  font-weight: 400;
+}
+.para {
+  font-size: var(--fs-400);
+  font-weight: 300;
+  color: var(--secondary-clr);
+}
+
+/**********
+Styling 
+**********/
+body {
+  background: #f2f2f2;
+  font-family: var(--ff-primary);
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 0;
+  gap: 1rem;
+}
+.heading .logo {
+  max-width: 3rem;
+}
+.heading img {
+  vertical-align: middle;
+}
+
+.main-heading {
+  text-align: center;
+  margin: 4em 0 1em 0;
+}
+
+.main-heading h2 {
+  color: var(--primary-clr);
+  font-size: var(--fs-200);
+}
+
+.section-one {
+  max-width: 100%;
+  margin: 2rem 0 5rem 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.card-wrapper {
+  width: 80%;
+  position: relative;
+  min-height: 100vh;
+  margin-top: 4rem;
+  background: #fff;
+  border-radius: 5rem;
+  border: 0.5px solid var(--border-clr);
+  box-shadow: 0 -5px 1rem -5px rgba(0, 0, 0, 0.264);
+  padding: 0 5em 2em 4em;
+}
+.image-wrapper {
+  max-width: 20rem;
+  max-height: 20rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border: 2px solid var(--border-clr);
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-6rem);
+}
+.image-wrapper img {
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+.icon-wrapper {
+  max-width: 6rem;
+  margin: 0 auto 4rem auto;
+}
+.quote {
+  max-width: 60%;
+  text-align: justify;
+  margin: 3rem 0 0 5rem;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+}
+.share p {
+  font-size: var(--fs-200);
+  color: var(--primary-clr);
+}
+.share .links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.share .links img {
+  max-width: 7rem;
+}
+
+.card-1 {
+  z-index: 1000;
+}
+.card-2 {
+  z-index: 100;
+  max-width: 76%;
+  transform: translateY(1rem);
+  border: 1px solid var(--card-border);
+  box-shadow: none;
+  border-radius: 4rem;
+  position: absolute;
+}
+.card-3 {
+  z-index: 10;
+  max-width: 74%;
+  transform: translateY(2rem);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 1px 5px rgb(211, 211, 211);
+  border-radius: 4rem;
+  position: absolute;
+}
+
+.card-2,
+.card-3 {
+  background: #f6f6f6;
+}
+.section-two {
+  text-align: center;
+}
+
+.section-two .note {
+  width: 70%;
+  margin: 0 auto;
+  font-size: var(--fs-100);
+  color: var(--secondary-clr);
+}
+
+footer {
+  min-height: 50vh;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40rem auto;
+}
+
+.footer-container {
+  grid-row: 2/3;
+}
+.community {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar img {
+  max-width: 6rem;
+}
+
+footer .hr {
+  height: 1px;
+  width: 100%;
+  background-color: var(--secondary-clr);
+  margin: 2rem 0 1rem 0;
+}
+.text {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-200);
+  color: #333;
+  font-weight: bold;
+}
+
+.text-blue {
+  color: #2375ca;
+}
+
+.footer-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  font-size: var(--fs-100);
+  color: var(--primary-clr);
+  margin-bottom: 1rem;
+}
