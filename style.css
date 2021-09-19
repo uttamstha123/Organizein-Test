@@ -134,6 +134,7 @@ body {
 .card-wrapper {
   width: 80%;
   position: relative;
+  height: 100%;
   margin-top: 4rem;
   background: #fff;
   border-radius: 5rem;
@@ -162,7 +163,7 @@ body {
 .quote {
   max-width: 60%;
   text-align: justify;
-  margin: 3rem 0 0 5rem;
+  margin: 3rem 0 10rem 5rem;
 }
 
 .share {
@@ -191,17 +192,20 @@ body {
 }
 .card-2 {
   z-index: 100;
+  height: 90%;
   max-width: 76%;
-  transform: translateY(1rem);
+  transform: translateY(3rem);
   border: 1px solid var(--card-border);
   box-shadow: none;
   border-radius: 4rem;
   position: absolute;
 }
+
 .card-3 {
   z-index: 10;
+  height: 90%;
   max-width: 74%;
-  transform: translateY(2rem);
+  transform: translateY(4rem);
   border: 1px solid var(--card-border);
   box-shadow: 0 1px 5px rgb(211, 211, 211);
   border-radius: 4rem;
@@ -229,7 +233,7 @@ footer {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 40rem auto;
+  grid-template-rows: 20rem auto;
 }
 
 .footer-container {
@@ -239,6 +243,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .avatar {
@@ -279,7 +284,8 @@ footer .hr {
 }
 
 @media all and (max-width: 640px) {
-  html,body {
+  html,
+  body {
     font-size: 50%;
   }
 }
